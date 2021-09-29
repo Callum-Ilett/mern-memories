@@ -1,7 +1,27 @@
 {
-  "name": "memories",
-  "private": true,
-  "devDependencies": {
-    "lerna": "^4.0.0"
-  }
+	"name": "memories",
+	"private": true,
+	"devDependencies": {
+		"lerna": "^4.0.0"
+	},
+	"dependencies": {
+		"@reduxjs/toolkit": "^1.6.1",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.5.0",
+		"@testing-library/user-event": "^7.2.1",
+		"@types/express": "^4.17.13",
+		"@types/jest": "^24.9.1",
+		"@types/node": "^16.10.1",
+		"@types/react": "^16.14.15",
+		"@types/react-dom": "^16.9.14",
+		"@types/react-redux": "^7.1.18",
+		"express": "^4.17.1",
+		"nodemon": "^2.0.13",
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-redux": "^7.2.5",
+		"react-scripts": "4.0.3",
+		"ts-node": "^10.2.1",
+		"typescript": "^4.4.3"
+	}
 }
