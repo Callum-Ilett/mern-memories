@@ -2,7 +2,7 @@
   "name": "memories",
   "private": true,
   "scripts": {
-    "dev": "lerna run dev",
+    "dev": "lerna run dev --stream",
     "test": "lerna run test"
   },
   "devDependencies": {

@@ -1,11 +1,15 @@
-import express from "express";
+import { connect as connectMongoDB } from "mongoose";
+import { MONGO_URI, PORT } from "./config";
+import app from "./app";
 
-const app = express();
-
-const PORT = 8000;
-
-app.get("/", (req, res) => res.send("Express + TypeScript Server"));
-
-app.listen(PORT, () => {
+app.listen(PORT, async () => {
   console.log(`⚡️[server]: Server is running at https://localhost:${PORT}`);
+  console.log("Connecting to MongoDB...");
+
+  try {
+    await connectMongoDB(MONGO_URI);
+    console.log("Status: CONNECTED!");
+  } catch (error) {
+    console.log("Statius: FAILED!");
+  }
 });
